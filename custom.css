@@ -1,0 +1,271 @@
+.logo {
+    max-height: 50px;
+    margin-top: -15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: Inconsolata, monospace;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #7B7B7B
+}
+
+.btn {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: auto;
+    background-size: cover;
+}
+
+.container {
+    max-width: 940px;
+    grid-row-gap: 20px;
+    flex-flow: column;
+    order: 1;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.heading {
+    color: #f9b900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+}
+
+.maintext {
+    color: #fff;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+}
+
+.maintext.visiontext {
+    width: 450px;
+    padding-bottom: 100px;
+    color: #151515;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+    font-weight: 600;
+    overflow: auto;
+}
+
+.visionsection {
+    max-width: 100%;
+    margin-top: 80px;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 130px;
+    justify-content: center;
+    background-image: url("assets/vision.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.itemscollection {
+    grid-column-gap: 30px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    display: grid;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-img-top {
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color:#f9b900;
+}
+
+.card-text {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #151515;
+}
+
+.footer {
+    background-color: #424242;
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.footerlogo {
+    grid-row-gap: 50px;
+    flex-direction: column;
+    padding-right:100px;
+    display: flex;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footercollection {
+    grid-column-gap: 50px;
+    display: flex;
+}
+
+.footermenu {
+    grid-row-gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.footerheading {
+    color: #f9b900;
+    margin-bottom: 20px;
+}
+
+.footerheading.longheading {
+    min-width: 271px;
+}
+
+.footertext {
+    max-width: 305px;
+    min-width: 130px;
+    color: #f9b900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footertext:hover {
+    color: #fff;
+}
+
+.contacttext {
+    grid-column-gap: 10px;
+    display: flex;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 40px;
+    }
+
+    .itemscollection {
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        flex-direction: column;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        display: grid;
+    }
+
+    .footercollection {
+        grid-column-gap: 25px;
+        grid-row-gap: 50px;
+        flex-direction: column;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .maintext.visiontext {
+        padding-bottom: 20px;
+    }
+
+    .itemscollection {
+        grid-column-gap: 0px;
+        grid-row-gap: 150px;
+        display: flex;
+    }
+
+    .footerlogo {
+        padding-right: 0px;
+    }
+
+    .footercollection {
+        grid-column-gap: 0px;
+        grid-row-gap: 150px;
+        align-items: center;
+        display: flex;
+    }
+
+    .footermenu {
+        align-items: center;
+    }
+
+    .footerheading.longheading {
+        min-width: 0px;
+    }
+
+    .footertext {
+        min-width: 0px;
+    }
+
+
+    .contacttext {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .navbar-nav {
+        margin-top: 40px;
+    }
+
+    .carousel-caption > p {
+        max-height: 50px;
+        overflow: scroll;
+    }
+
+    .maintext.visiontext {
+        width: auto;
+        max-height: 200px;
+        margin-left: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .footercollection {
+        grid-column-gap: 0px;
+        grid-row-gap: 150px;
+        align-items: center;
+        display: flex;
+    }
+
+    .contacttext {
+        display: flex;
+    }
+}
