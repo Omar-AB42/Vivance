@@ -1,0 +1,251 @@
+/* General */
+.container {
+    max-width: 85%;
+}
+
+.sharedcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding-block: 100px;
+}
+
+.btn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    background-color: #f8b800;
+}
+
+.heading {
+    color: #f8b800;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.maintext {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+/* Navigation Bar */
+
+.logo {
+    width: 180px;
+    height: 40px;
+    margin-top: -15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #f8b800;
+}
+
+/* Carousel */
+
+.carousel-inner > .carousel-item > img {
+    height: calc(100vh - 90px);
+    object-fit: cover;
+}
+
+.carousel-caption > button {
+    margin-bottom: 50px;
+}
+
+.carousel > .carousel-indicators > button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+/* Vision & Mission */
+
+.visioncontainer {
+    min-height: 75vh;
+    align-items: start;
+    position: relative;
+    background-color: #f8b800;
+}
+
+.visionimage {
+    max-height: calc(100vh - 200px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.visiontext {
+    max-width: 570px;
+    padding-left: 100px;
+    text-align: start;
+    color: #151515;
+}
+
+/* Careers */
+
+.itemscollection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+}
+
+.card {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.card-img-top {
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    max-height: 110px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #151515;
+}
+
+.modal-body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.modal-footer {
+    height: 80px;
+}
+
+/* Footer */
+
+.footercollection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.coldiv1 {
+    width: 40%;
+}
+
+.coldiv2 {
+    width: 25%;
+}
+
+.coldiv3 {
+    width: 35%;
+}
+
+.footertext {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footertext:hover {
+    color: #f8b800;
+}
+
+.contacttext {
+    display: flex;
+    column-gap: 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .coldiv3 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        width: 150px;
+        height: 34.06px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .visiontext {
+        max-width: 500px;
+        padding-left: 12px;
+    }
+
+    .itemscollection {
+        display: grid;
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footercollection {
+        display: grid;
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .coldiv1 {
+        width: fit-content;
+    }
+
+    .coldiv2 {
+        width: fit-content;
+    }
+
+    .coldiv3 {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .visiontext {
+        max-width: 380px;
+        padding-left: 0px;
+    }
+
+    .itemscollection {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .footercollection {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .visiontext {
+        max-width: 100vw;
+    }
+}
